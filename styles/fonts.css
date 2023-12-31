@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'IR';
+    src: url(../fonts/IR.ttf) format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'MR';
+    src: url(../fonts/MR.ttf) format('truetype');
+    font-weight: 400;
+}
