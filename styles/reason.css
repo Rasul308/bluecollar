@@ -1,7 +1,5 @@
 .reason{
     position: relative;
-}
-.reason__wrap{
     display: flex;
     flex-direction: row;
     gap: 70px;
