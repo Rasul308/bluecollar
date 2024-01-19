@@ -1,14 +1,20 @@
 .area{
     background: #F4F4F4;
-    width: 100%;
-    height: 1397px;
+    
 }
 .area__wrap{
     padding-top: 240px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 140px;
+}
+.area__desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .area__desc-top{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     margin: 0 auto;
     max-width: 213px;
@@ -40,7 +46,7 @@
     justify-content: center;
 }
 .area__desc-text{
-    transform: translateX(30%);
+    text-align: center;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
@@ -49,6 +55,10 @@
     width: 100%;
     height: 54px;
     margin-top: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .area__cards{
     margin-top: 50px;
@@ -85,10 +95,14 @@
     font-weight: 400;
     line-height: 27px;
     color: #D2D2D2;
-    max-width: 299px;
+    max-width: 300px;
     width: 100%;
     height: 108px;
     margin: 0 0 22px 35px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .area__cards-card-btn{
     font-size: 18px;
@@ -99,4 +113,41 @@
     border: none;
     color: white;
     padding-left: 35px;
+}
+@media screen and (max-width:1080px) {
+    .area__wrap{
+        padding-top: 760px;
+    }
+}
+@media screen and (max-width:600px) {
+    .area__wrap{
+        padding-top: 840px;
+    }
+}
+@media screen and (max-width:530px) {
+    .area__wrap{
+        padding-top: 920px;
+    }
+}
+@media screen and (max-width:498px) {
+    .area__wrap{
+        padding-top: 840px;
+    }
+}
+@media screen and (max-width:380px) {
+    .area__cards-card-text{
+        margin-left: 20px;
+        margin-right: 20px;
+        height: auto;
+        width: 260px;
+    }
+    .area__cards-card-btn{
+        margin-left: 20px;
+    }
+    .area__cards-card-title{
+        margin-left: 20px;
+    }
+    .area__cards-card-img{
+        margin-left: 20px;
+    }
 }
